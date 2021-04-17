@@ -1,5 +1,0 @@
-{
-  "port": 3000,
-  "jwt":  "Anonim mong",
-  "mongoURL": "mongodb+srv://Trigger_1:fullstack@cluster0.w6iqp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
-}
