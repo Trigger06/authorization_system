@@ -1,38 +1,26 @@
 const { DataTypes } = require("sequelize");
-
 module.exports = (sequelize, Sequelize) => {
-	const User = sequelize.define("user", {
+	const Employers   = sequelize.define("employers", {
 		id: {
 		  type: DataTypes.INTEGER,
 		  autoIncrement: true,      // автоматически увеличивает значение для каждого нового поля
 		  primaryKey: true,         // уникальный ключ
-		  allowNull: false			// не допускается  нулевое значение 
+		  allowNull: false			// не допускается  нулевое значение
 		},
 		name: {
 		  type: DataTypes.STRING,
-		  allowNull: false
-		},
-		age: {
-		  type: Sequelize.INTEGER,
 		  allowNull: false
 		},
 		verified: {
 			type: DataTypes.BOOLEAN,
 			allowNull: false,
 			defaultValue: false
-	
-		},
-		educationRating: {
-			type: DataTypes.INTEGER(3), 
-			allowNull: true
-		},
+	    },
 		address: {
 			type: DataTypes.STRING,
 			allowNull: true
 		}
 	});
 
-	return User;
+	return Employers;
 }
-
-
