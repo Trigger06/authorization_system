@@ -1,0 +1,95 @@
+.information {
+	background-color: #f1f1f1;
+	padding: 0 !important;
+	border-radius: 10px;
+}
+
+.avatar {
+	padding: 0;
+	border-radius: 10px;
+	margin-left: 0;
+	float: left;
+	width: 100%;
+}
+
+.graph {
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.advice {
+	border-radius: 10px;
+	background-color: #f1f1f1;
+}
+
+.advice a {
+	text-decoration: none;
+}
+
+.test_a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.test_a:hover {
+	color: inherit;
+}
+
+.test, .test img {
+	border-radius: 10px;
+}
+
+.test:hover {
+	background-color: #ebf0f7;
+}
+
+.pustota {
+	cursor: default !important;
+}
+
+#myInput {
+	color: #000 !important;
+    background-image: url('/css/searchicon.png'); 
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 10px 12px 10px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    border-radius: 10px 10px 0 0;
+}
+
+#myInput:focus {
+	outline:none;
+}
+
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f1f1f1; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #e8e8e8; /* Add a hover effect to all links, except for headers */
+}
+
+.serch, .panel {
+	width: inherit !important;
+}
+
+.radius {
+	border-radius: 0 0 10px 10px;
+	padding-bottom: 5%;
+}

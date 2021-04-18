@@ -23,54 +23,7 @@ db.users = require('./models/user.js');
 const PORT = process.env.PORT || 3000;
 
 
-// Models
-/* const User = sequelize.define("user", {
-	id: {
-	  type: Sequelize.INTEGER,
-	  autoIncrement: true,      // автоматически увеличивает значение для каждого нового поля
-	  primaryKey: true,         // уникальный ключ
-	  allowNull: false			// не допускается  нулевое значение 
-	},
-	name: {
-	  type: Sequelize.STRING,
-	  allowNull: false
-	},
-	age: {
-	  type: Sequelize.INTEGER,
-	  allowNull: false
-	},
-	verified: {
-		type: DataTypes.BOOLEAN,
-		allowNull: false,
-		defaultValue: false
-
-	},
-	educationRating: {
-		type: DataTypes.INTEGER(3), 
-		allowNull: true
-	},
-	address: {
-		type: DataTypes.STRING,
-		allowNull: true
-	}
-}); */
-
-/* const Organization = sequelize.define("Organization", {
-	id:{
-		type: DataTypes.INTEGER,
-		autoIncrement: true,
-		primaryKey: true,
-		allowNull: false
-	},
-	name: {
-		type: DataTypes.STRING,
-		allowNull: true,
-	},
-}) */
-
-/* User.belongsTo(Organization) */
-
-// employers , organization , admin
+\
 
 sequelize.sync();
 
@@ -93,17 +46,7 @@ app.get('/regg', (req,res) => {
 	res.send('OK');
 })
 
-/* app.get('/reg', (req, res) => {
-	User.create({
-		name: "Tom",
-		age: "30",
-		educationRating: 3,
-		address: "street"
-	}).then(res => console.log(res))
-	res.send('Hello')
-})
 
-*/
 
 app.listen(PORT, () => {
 	console.log('Server run. Port: '+ PORT);

@@ -18,10 +18,7 @@ router.post('/login', urlencodedParser, (req, res) =>{
 })
 
 router.post('/reg', urlencodedParser, (req, res) =>{
-    const userEmail = req.body.userEmail
-    const userPassword = req.body.userPassword;
-
-    //const { userEmail, userPassword } = req.body;
+    const { userEmail, userPassword } = req.body;
 
     res.status(200);
 
