@@ -2,6 +2,8 @@
 .idea
 .vs
 
+
+
 # OS X
 .DS_Store*
 Icon?
@@ -17,8 +19,9 @@ Desktop.ini
 *~
 
 
+
 # npm
-node_modules
+
 package-lock.json
 *.log
 *.gz
@@ -27,5 +30,7 @@ package-lock.json
 # Coveralls
 coverage
 
+
 # Benchmarking
 benchmarks/graphs
+node_modules
